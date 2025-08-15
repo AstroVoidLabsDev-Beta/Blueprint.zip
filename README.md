@@ -25,6 +25,8 @@ sudo apt-get update
 sudo apt-get install -y nodejs
 ## Next-
 
+---
+
 ### 2) Install base packages and Node.js 20
 ```bash
 npm i -g yarn
