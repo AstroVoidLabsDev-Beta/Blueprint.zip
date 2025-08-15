@@ -69,7 +69,7 @@ sudo ./installer.sh
 ---
 
 ## Credits
-Maintained by **[ITZ_YTANSH / AstroVoidLabsDev]**  
+Maintained by **[ITZ_YTANSH / AstroVoidLabsDev-Beta]**  
 Based on **Blueprint Framework** and **Pterodactyl Panel** installation steps.
     Subscribe On Youtube IITZ_YTANSH
 
