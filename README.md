@@ -19,23 +19,23 @@ echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.co
 apt-get update
 apt-get install -y nodejs
 
-```2) npm i -g yarn
+``` 2) npm i -g yarn
 
-```3) cd /var/www/pterodactyl
+``` 3) cd /var/www/pterodactyl
 yarn
 
-##  Download the latest release
+## Download the latest release
 ```wget "$(curl -s https://api.github.com/repos/BlueprintFramework/framework/releases/latest | grep 'browser_download_url' | cut -d '"' -f 4)" -O release.zip
 
 ## Extract release
 Unarchive the release you downloaded in the previous step in your Pterodactyl folder.
-```mv release.zip /var/www/pterodactyl/release.zip
+``` mv release.zip /var/www/pterodactyl/release.zip
 cd /var/www/pterodactyl
 unzip release.zip
 
-##  Configuration
+## Configuration
 This step allows Blueprint to function and know where itself and Pterodactyl are located and which permissions to use. Create a file called .blueprintrc inside of your Pterodactyl directory to begin.
-```touch /var/www/pterodactyl/.blueprintrc  
+``` touch /var/www/pterodactyl/.blueprintrc  
 
 # Run the installer (requires sudo/root)
 chmod +x installer.sh
