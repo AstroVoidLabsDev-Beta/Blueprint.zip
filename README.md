@@ -27,7 +27,7 @@ sudo apt-get install -y nodejs
 
 ---
 
-### 2) Install base packages and Node.js 20
+# Blueprint + Pterodactyl Panel
 ```bash
 npm i -g yarn
 
