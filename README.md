@@ -24,4 +24,11 @@ echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.co
 sudo apt-get update
 sudo apt-get install -y nodejs
 
+### 2) Install Yarn Globally
+```bash
 npm i -g yarn
+
+### 3) Navigate to your Pterodactyl (usually /var/www/pterodactyl) and run the following command to initialize dependencies:
+```bash
+cd /var/www/pterodactyl
+yarn
