@@ -2,7 +2,7 @@
 
 > One-command setup for a Pterodactyl working directory with Node.js 20, Yarn, utilities, and the latest Blueprint Framework release.
 
-![Banner](banner.png)
+![Banner](https://blueprint.zip/.assets/brand/retro.png)
 
 ## What this does
 - Installs base packages, Node.js 20 (NodeSource), and Yarn  
@@ -69,6 +69,7 @@ sudo ./installer.sh
 ---
 
 ## Credits
-Maintained by **[Your Name / GitHub Username]**  
+Maintained by **[ITZ_YTANSH / AstroVoidLabsDev]**  
 Based on **Blueprint Framework** and **Pterodactyl Panel** installation steps.
+    Subscribe On Youtube IITZ_YTANSH
 
