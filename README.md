@@ -17,11 +17,11 @@ sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
 echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list
 apt-get update
-apt-get install -y nodejs```
+apt-get install -y nodejs
 
 ```2) npm i -g yarn
 
-``` 3) cd /var/www/pterodactyl
+```3) cd /var/www/pterodactyl
 yarn
 
 ## Download the latest release
@@ -29,7 +29,7 @@ yarn
 
 ## Extract release
 Unarchive the release you downloaded in the previous step in your Pterodactyl folder.
-``` mv release.zip /var/www/pterodactyl/release.zip
+```4) mv release.zip /var/www/pterodactyl/release.zip
 cd /var/www/pterodactyl
 unzip release.zip
 
