@@ -55,8 +55,8 @@ touch /var/www/pterodactyl/.blueprintrc
 
 ### 7) Run the installer (requires sudo/root)
 ```bash
-chmod +x installer.sh
-sudo ./installer.sh
+chmod +x blueprint.sh
+bash blueprint.sh
 ```
 
 ---
