@@ -1,75 +1,42 @@
-# Blueprint + Pterodactyl Panel
+# 📦 One Click Blueprint.Zip Installer
 
-> One-command setup for a Pterodactyl working directory with Node.js 20, Yarn, utilities, and the latest Blueprint Framework release.
-
-![Banner](https://blueprint.zip/.assets/brand/retro.png)
-
-## What this does
-- Installs base packages, Node.js 20 (NodeSource), and Yarn  
-- Prepares `/var/www/pterodactyl` and runs `yarn` if `package.json` exists  
-- Downloads the latest **Blueprint Framework** release and unpacks it  
-- Creates `.blueprintrc`, makes `blueprint.sh` executable, and runs it  
-- Safe to re-run — idempotent steps and clear logging
+Easily install **Blueprint.Zip** in just **one click** using this auto-installer script.  
+No more complicated steps — just run the command and you're ready to go! 🚀
 
 ---
 
-## Quick Start Guide
+## ⚡ Quick Install
 
-### 1) Install base packages and Node.js 20
+Run the following command in your terminal:
+
 ```bash
-sudo apt-get install -y ca-certificates curl gnupg
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
-echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
-sudo apt-get update
-sudo apt-get install -y nodejs
+bash <(curl -s https://raw.githubusercontent.com/IC-DEVLEPMENTS/blueprint-autoinstaller/main/install_blueprint.sh)
 ```
 
-### 2) Install Yarn globally
-```bash
-npm i -g yarn
-```
-
-### 3) Prepare the Pterodactyl directory and install dependencies
-```bash
-cd /var/www/pterodactyl
-yarn
-```
-
-### 4) Download the latest Blueprint release
-```bash
-wget "$(curl -s https://api.github.com/repos/BlueprintFramework/framework/releases/latest | grep 'browser_download_url' | cut -d '"' -f 4)" -O release.zip
-```
-
-### 5) Extract the release into the Pterodactyl folder
-```bash
-mv release.zip /var/www/pterodactyl/release.zip
-cd /var/www/pterodactyl
-unzip release.zip
-```
-
-### 6) Create the `.blueprintrc` configuration file
-```bash
-touch /var/www/pterodactyl/.blueprintrc
-```
-
-### 7) Run the installer (requires sudo/root)
-```bash
-chmod +x blueprint.sh
-bash blueprint.sh
-```
+That’s it! 🎉 The script will handle everything for you.
 
 ---
 
-## Notes
-- Ensure you run all commands as **root** or with **sudo**  
-- If `blueprint.sh` is included in the release, it will be executed automatically  
-- Make sure `/var/www/pterodactyl` exists before starting  
+## 🛠 Features
+- ✅ One-line installation  
+- ✅ Fast & automated setup  
+- ✅ Beginner-friendly usage  
+- ✅ Works on Linux / macOS  
 
 ---
 
-## Credits
-Maintained by **[ITZ_YTANSH / AstroVoidLabsDev-Beta]**  
-Based on **Blueprint Framework** and **Pterodactyl Panel** installation steps.
-    Subscribe On Youtube IITZ_YTANSH
+## 👨‍💻 Credits
+- **Code**: [IC-DEVLEPMENTS](https://github.com/IC-DEVLEPMENTS)  
+- **Guide**: ITZ_YTANSH  
+- **Support & Updates**: Follow **AstroVoidLabsDev-Beta**
 
+---
+
+## ⭐ Support the Project
+If you find this useful, don’t forget to **star ⭐ the repo** and share it with your friends! ❤️
+
+---
+
+## ⚠️ Disclaimer
+This installer is provided **as-is** without any warranty.  
+Use it at your own risk. Always review the script before running on your system.
